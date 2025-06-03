@@ -4,36 +4,86 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Coffee Shop</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div class="main">
-            <p class="paragraph" id="hello">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloremque dicta distinctio nobis quod tempora eligendi debitis
-                ut maiores ipsa? Repellat, exercitationem minima! Porro quia
-                aut, rem suscipit illo officiis minima!
-            </p>
-            <p class="para2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-                eveniet id, hic nam at quia repellendus tenetur exercitationem
-                libero! Distinctio beatae vel quisquam aliquid deserunt nisi
-                consequatur maxime odio quaerat voluptatum. Hic ducimus modi eum
-                non velit repellendus doloremque aliquid et debitis, pariatur
-                error consequatur rerum quaerat eius? Ipsa ea incidunt
-                exercitationem fugit adipisci autem non laboriosam tempora ullam
-                animi alias maxime perspiciatis eaque ipsum quidem, tenetur
-                suscipit nostrum, nemo ipsam. Impedit consequuntur vitae iste
-                fugit esse, eum nobis dignissimos maiores fuga laborum.
-                Dignissimos harum error, magnam repudiandae perferendis,
-                similique vero nemo atque enim, rerum porro laborum doloremque!
-                Repellendus, eaque?
-            </p>
-            <p>
-                <a href="" class="link"></a>
-                <a href="" class="link"></a>
-                <a href="" class="link"></a>
-            </p>
-        </div>
+        <header>
+            <nav class="navbar">
+                <div id="logo"><span>C</span>OFFEE</div>
+                <ul class="nav-links">
+                    <li>
+                        <span class="navHome"><a href="#">HOME</a></span>
+                    </li>
+                    <li>
+                        <span class="navCoffee"><a href="#">COFFEE</a></span>
+                    </li>
+                    <li>
+                        <span class="navBakery"><a href="#">BAKERY</a></span>
+                    </li>
+                    <li>
+                        <span class="navShop"><a href="#">SHOP</a></span>
+                    </li>
+                    <li>
+                        <span class="navAbout"><a href="#">ABOUT</a></span>
+                    </li>
+                    <li>
+                        <span class="navLogin"><a href="#">LOGIN</a></span>
+                    </li>
+                    <li class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-text">
+                <h4>Welcome!</h4>
+                <h1>
+                    We serve the richest coffee <br />
+                    in the city
+                </h1>
+                <p>
+                    Savor every sip with our handcrafted coffee made from the
+                    finest beans.
+                </p>
+                <button id="orderButton">Order Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="coffee.jpg" alt="Coffee Cup" />
+            </div>
+        </section>
+        <section class="categories">
+            <div class="category hotCoffe">
+                <span><i class="fa-solid fa-mug-hot"></i></span>
+                <p>Hot Coffee</p>
+            </div>
+            <div class="category coldCoffee">
+                <span><i class="fa-solid fa-glass-water"></i></span>
+                <p>Cold Coffee</p>
+            </div>
+            <div class="category">
+                <span><i class="fa-solid fa-prescription-bottle"></i></span>
+                <p>Cup Coffee</p>
+            </div>
+            <div class="category desert">
+                <span><i class="fa-solid fa-cake-candles"></i></span>
+                <p>Dessert</p>
+            </div>
+        </section>
+
+        <section class="special">
+            <h2>OUR SPECIAL COFFEE</h2>
+            <div class="product-placeholder"></div>
+        </section>
     </body>
 </html>

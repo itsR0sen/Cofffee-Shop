@@ -1,4 +1,167 @@
-.paragraph {
-    color: brown;
-    background-color: aqua;
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #1e1e1e;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+}
+
+#logo {
+    font-size: 1rem;
+    font-family: "inter", sans-serif;
+    font-weight: bold;
+    padding: 10px;
+    padding-left: 20px;
+    cursor: pointer;
+}
+#logo span {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.nav-links li {
+    padding: 15px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.6s ease, color 0.6s ease;
+    color: #e0e0e0;
+}
+.nav-links li span a {
+    text-decoration: none;
+    color: inherit;
+}
+.nav-links li:hover {
+    background: #efefef;
+    color: #121212;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #121212;
+    color: white;
+}
+
+.hero-text {
+    max-width: 60%;
+}
+.hero h4 {
+    font-size: 36px;
+    font-weight: 600;
+}
+.hero-text h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 20px 5px;
+}
+
+.hero-text p {
+    width: 506px;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 0 20px;
+    color: #cccccc;
+}
+
+.hero-text button {
+    background-color: white;
+    color: #1c130d;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 194;
+    height: 56;
+    border-radius: 20px;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    gap: 10px;
+    transition: background-color 0.6s ease, color 0.6s ease;
+}
+#orderButton:hover {
+    background: #b55e02;
+    color: #fff;
+}
+
+.hero-image {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.hero-image img {
+    width: 400%;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: -95%;
+    left: -150%;
+}
+
+/* Category Section */
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    background-color: #e6d8c3;
+}
+
+.category p {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.category span {
+    text-align: center;
+    font-size: 75px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Special Coffee Section */
+.special {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: white;
+}
+.special h2 {
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+}
+
+.product-placeholder {
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 272px;
+    height: 327px;
+    border-radius: 12px;
 }
